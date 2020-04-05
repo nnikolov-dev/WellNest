@@ -1,40 +1,36 @@
 .landing {
     display: flex;
     align-items: center;
-
-    @include until($tablet) {
-        align-items: flex-start;
-    }
-
-    @include from($tablet) {
-        background: url('../images/background/bg1.png');
-        background-size: cover;
-    }
-
     width: 100%;
     min-height: 100vh;
 
 
     @include until($tablet) {
+        align-items: flex-start;
         margin-left: 32px;
         padding-left: 2rem;
+
+        .image {
+            width: 16rem;
+        }
     }
 
     @include from($tablet) {
         padding-left: 10rem;
         min-height: 100vh;
+        background: url('../images/background/bg1.png');
+        background-size: cover;
+
+        .button {
+            min-width: 220px;
+            padding: 1.5rem;
+        }
     }
 
     @include from($desktop) {
         padding-left: 20rem;
     }
 
-    @include until($tablet) {
-        .image {
-            width: 16rem;
-        }
-
-    }
 
     .content {
         h1 {
@@ -56,7 +52,11 @@
 
             @include until($tablet) {
                 padding-left: 0.9rem;
-                width: 17rem;
+                width: 16rem;
+
+                .button {
+                    min-width: 7rem;
+                }
             }
 
             .button {
@@ -85,25 +85,6 @@
                 }
             }
         }
-
-        @include until($tablet) {
-            .button {
-                min-width: 7rem;
-            }
-
-            .buttons {
-                width: 16rem;
-            }
-        }
-
-        @include from($tablet) {
-            .button {
-                min-width: 220px;
-                padding: 1.5rem;
-            }
-        }
-
-
 
         p {
             font-style: italic;
@@ -176,8 +157,6 @@
         }
     }
 
-
-
     .row {
         margin: 0;
         padding: 0;
@@ -189,10 +168,8 @@
 
     @include from($desktop) {
         padding-left: 2rem;
-
         .row {
             width: 90%;
-            ;
         }
     }
 
