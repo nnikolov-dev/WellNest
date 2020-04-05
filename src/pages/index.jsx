@@ -54,7 +54,6 @@ const Index = () => {
 						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
 						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
 					</div>
-					<br></br>
 					<div className="row tile is-horizontal">
 						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
 						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
