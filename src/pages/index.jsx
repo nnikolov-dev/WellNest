@@ -50,18 +50,54 @@ const Index = () => {
 						<button className="button is-info is-outlined">Hang Up</button>
 					</div>
 				</div>
-				<div className="content is-ancestor is-12 is-vertical">
+				<div className="content is-ancestor is-12 is-vertical is-hidden-tablet">
+					<div className="row tile is-horizontal">
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+					</div>
+				</div>
+				<div className="content is-ancestor is-12 is-vertical is-tablet">
+					<div className="row tile is-horizontal">
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+					</div>
+					<div className="row tile is-horizontal">
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+					</div>
+					<div className="row tile is-horizontal">
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+					</div>
+				</div>
+				<div className="content is-ancestor is-12 is-vertical is-desktop">
 					<div className="row tile is-horizontal">
 						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
 						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
 						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
 					</div>
-					<br></br>
 					<div className="row tile is-horizontal">
 						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
 						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
 						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
-
+					</div>
+				</div>
+				<div className="content is-ancestor is-12 is-vertical is-fullhd ">
+					<div className="row tile is-horizontal">
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+					</div>
+					<div className="row tile is-horizontal">
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
 					</div>
 				</div>
 			</div>
