@@ -41,7 +41,7 @@ const Index = () => {
 			</div>
 			<div className="video-grid">
 				<div class="level">
-					<div class=" buttons are-small" >
+					<div class="buttons are-small" >
 						<button className="button is-info">Open Cam</button>
 						<button className="button is-info">Open Mic</button>
 						<button className="button is-info is-outlined">Join Room</button>
