@@ -1,7 +1,6 @@
 import React from 'react'
 import {Helmet} from 'react-helmet'
 import SideNav from '../components/SideNav'
-import Button from '../components/Button'
 import '../assets/styles/style.scss'
 
 import avatarImage from '../assets/images/avatar.svg'
@@ -20,7 +19,6 @@ import thumbnailImage3 from '../assets/images/thumbnails/thumb3.png'
 import thumbnailImage4 from '../assets/images/thumbnails/thumb4.png'
 import thumbnailImage5 from '../assets/images/thumbnails/thumb5.png'
 import thumbnailImage6 from '../assets/images/thumbnails/thumb6.png'
-import thumbnailImage7 from '../assets/images/thumbnails/thumb7.png'
 
 const Index = () => {
 	return (

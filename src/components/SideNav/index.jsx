@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import {Link} from 'gatsby'
 import {window} from 'browser-monads'
 import styles from './sidenav.module.scss'
 
@@ -16,27 +17,33 @@ import textImage from '../../assets/images/logo_text.png'
 const items = [
     {
         title: 'Schedule',
-        icon: calIcon
+        icon: calIcon,
+        link: '#',
     },
     {
         title: 'Classroom',
-        icon: timeIcon
+        icon: timeIcon,
+        link: '/class',
     },
     {
         title: 'My Stats',
-        icon: heartIcon
+        icon: heartIcon,
+        link: '#',
     },
     {
         title: 'Leaderboard',
-        icon: leaderIcon
+        icon: leaderIcon,
+        link: '#',
     },
     {
         title: 'Favourites',
-        icon: favIcon
+        icon: favIcon,
+        link: '#',
     },
     {
         title: 'Settings',
-        icon: cogIcon
+        icon: cogIcon,
+        link: '#',
     },
 ]
 
@@ -58,29 +65,25 @@ const SideNav = ({avatar}) => {
 
     return (
     <div className={expanded ? styles.Expanded : styles.SideNav}>
+    {/* <div className={styles.Expanded}> */}
         <div className={styles.Top}>
-            <img src={avatar} alt="Avatar" className={styles.Avatar} />
+            <div className={styles.Avatar} onClick={handleExpand}>
+                <div className={styles.Line} />
+                <div className={styles.Line} />
+                <div className={styles.Line} />
+            </div>
             <div className={styles.Logo}>
-                <img src={logoImage} alt="WellNest" /><img src={textImage} alt="WellNest" />
+               <Link to='/'><img src={logoImage} alt="WellNest" /><img src={textImage} alt="WellNest" /></Link>
             </div>
             <div className={styles.Nav}>
-                {items.map(({title, icon}) => (
+                {items.map(({title, icon, link}) => (
                     <div key={title} className={styles.Item}>
                         <div className={styles.Icon}>
                             <img src={icon} alt="Navigation Link" />
                         </div>
-                        <div className={styles.Text}>{title}</div>
+                        <div className={styles.Text}><Link to={link}>{title}</Link></div>
                     </div>
                 ))}
-            </div>
-            </div>
-        <div className={styles.Bottom}>
-            <div role="button" className={styles.Button} onClick={handleExpand} />
-            <div className={styles.Logout}>
-                <div className={styles.Icon}>
-                    <img src={logoutIcon} alt="Logout" />
-                </div>
-                <div className={styles.Text}>Log Out</div>
             </div>
         </div>
     </div>

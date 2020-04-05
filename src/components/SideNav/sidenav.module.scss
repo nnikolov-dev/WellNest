@@ -6,20 +6,26 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: $lightblue;
     padding: 1rem 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px 0px 5px #E5E9F2;
     transition: all 0.15s ease-in-out;
     height: 100vh;
 
     .Top {
         .Avatar {
-            max-width: 100%;
-            height: auto;
+            padding: 2rem;
+            transition: all 0.15s ease-in-out;
+            cursor: pointer;
+
+            .Line {
+                width: 30px;
+                height: 3px;
+                background-color: #0732A2;
+                margin: 6px 0;
+            }
         }
 
         .Logo {
@@ -27,9 +33,8 @@
         }
 
         .Nav {
-            display: flex;
+            display: none;
             margin-top: 8rem;
-            display: flex;
             flex-direction: column;
             align-items: center;
             transition: all 0.15s ease-in-out;
@@ -49,7 +54,6 @@
                 }
 
                 .Text {
-                    display: none;
                     margin-left: 2rem;
                     font-weight: 500;
                     font-size: 0.9rem;
@@ -80,7 +84,6 @@
         }
 
         .Logout {
-            display: none;
             align-items: center;
             cursor: pointer;
 
@@ -90,7 +93,6 @@
             }
 
             .Text {
-                display: none;
                 margin-left: 2rem;
                 font-weight: 500;
                 font-size: 0.9rem;
@@ -109,10 +111,12 @@
     @extend .SideNav;
     min-width: 286px;
     align-items: flex-start;
+    background: $lightblue;
 
     .Top {
+
         .Avatar {
-            display: none;
+            opacity: 0;
         }
 
         .Logo {
@@ -123,6 +127,7 @@
         }
 
         .Nav {
+            display: flex;
             margin-left: 0.70rem;
             align-items: flex-start;
             width: 100%;
@@ -148,7 +153,7 @@
     }
 
     .Bottom {
-        .Button {
+        .Avatar {
             display: none;
         }
         .Logout {
