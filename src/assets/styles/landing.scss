@@ -50,6 +50,7 @@
         .buttons {
             display: flex;
             margin: 2rem 0;
+            justify-content: space-around;
 
             .button {
                 font-weight: 500;
@@ -61,10 +62,13 @@
                     // flex: 1 1 0px;
                     margin-right: 2rem;
                 }
+
+                @include from($tablet) {
+                    min-width: 260px;
+                }
             }
 
             @include from($tablet) {
-
                 //hack to work around react/bulma conflicts
                 .is-outlined,
                 .is-primary {
